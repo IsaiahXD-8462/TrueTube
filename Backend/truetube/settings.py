@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'authentication.apps.AuthenticationConfig',
     'corsheaders',
     'comments.apps.CommentConfig',
+    'replies.apps.ReplyConfig',
     'comments',
     'replies',
 ]

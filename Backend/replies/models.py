@@ -5,4 +5,4 @@ from authentication.models import User
 class Reply(models.Model):
     text = models.CharField(max_length=255)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    comment = models.ForeignKey(User, on_delete=models.CASCADE)
+    commentation = models.ForeignKey(User, on_delete=models.CASCADE)
