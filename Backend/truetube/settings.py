@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'authentication.apps.AuthenticationConfig',
     'corsheaders',
-    'comments.apps.CommentConfig',
-    'replies.apps.ReplyConfig',
+    #'comments.apps.CommentConfig',
+    #'replies.apps.ReplyConfig',
     'comments',
     'replies',
 ]
