@@ -10,3 +10,6 @@ DATABASES = {
         'PASSWORD': 'My$&1@1993'
     }
 }
+
+# key=API_KEY
+# AIzaSyCij_i9QTAd7j1oN_WgDX73RdjZPNV5hbw
