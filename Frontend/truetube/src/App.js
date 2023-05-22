@@ -1,8 +1,8 @@
 import { Routes, Route, Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import SearchPage from './components/SearchPage'
-import Login from './components/Login'
+import SearchPage from './Pages/Search Page/SearchPage'
+import Login from './Pages/Login/Login'
 
 function App() {
   
