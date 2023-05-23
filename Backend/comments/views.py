@@ -13,6 +13,17 @@ from .serializers import CommentSerializer
 def nonlogged_in_user(request):
     comment = Comment.objects.all()
     serializer = CommentSerializer(comment, many=True)
+    
+    comments_param = request.query_params.get('video_id')
+    sort_param = request.query_params.get('sort')
+
+    if comments_param:
+        comment = comment.filter(video_id__user=comments_param)
+        serializer = CommentSerializer(comment, many=True)
+
+    if sort_param:
+        comment = comment.order_by(sort_param)
+
     return Response(serializer.data)
 
 
