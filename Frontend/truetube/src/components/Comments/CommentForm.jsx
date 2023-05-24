@@ -15,7 +15,7 @@ const CommentForm = (props) => {
 
     return ( 
         <form onSubmit={handleSubmit}>
-            <label>Song</label>
+            <label>Comment</label>
             <input type='text' value={comment} onChange={(event) => makeComment(event.target.value)} />
             <button type='submit'>Submit</button>
         </form>
