@@ -19,8 +19,6 @@ const CommentList = (props) => {
                     <td>{entry.Likes}</td>
                     <td>{entry.Dislikes}</td>
                     <td><button onClick={() => props.makeComment()}>Like</button></td>
-                    <td><button onClick={() => props.editComment()}>Edit</button></td>
-                    <td><button onClick={() => props.deleteComment()}>Delete</button></td>
                 </tr>
             );
           })}
