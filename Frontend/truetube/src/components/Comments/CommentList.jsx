@@ -6,8 +6,7 @@ const CommentList = (props) => {
           <tr>
             <th>Entry Number</th>
             <th>Comment</th>
-            <th>Dislikes</th>
-            <th>Likes</th>
+            <th>Date</th>
           </tr>
         </thead>
         <tbody>
@@ -16,8 +15,7 @@ const CommentList = (props) => {
                 <tr>
                     <td>{index + 1}</td> 
                     <td>{entry.Comment}</td>
-                    <td>{entry.Likes}</td>
-                    <td>{entry.Dislikes}</td>
+                    <td>{entry.Date}</td>
                     <td><button onClick={() => props.makeComment()}>Like</button></td>
                 </tr>
             );

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const CommentForm = (props) => {
+const CommentForm = ( {handleSubmit, submitLabel }) => {
 
     const [comment, addComment] = useState('');
 
@@ -9,7 +9,7 @@ const CommentForm = (props) => {
         let newComment = {
             comment: comment
         };
-        console.log(newSong);
+        console.log(newComment);
         props.addNewCommentProperty(newComment)
     }
 
